@@ -1,0 +1,18 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQL10Dialect</property>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.default_schema">module_3</property>
+        <property name="hibernate.show_sql">false</property>
+
+        <mapping class="com.alevel.model.Group"/>
+        <mapping class="com.alevel.model.Student"/>
+        <mapping class="com.alevel.model.Mark"/>
+        <mapping class="com.alevel.model.Subject"/>
+        <mapping class="com.alevel.model.Teacher"/>
+    </session-factory>
+</hibernate-configuration>
